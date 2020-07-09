@@ -1,2 +1,3 @@
 # ToDoApp
-A to-do web application to practice Typescript.
+
+Technologies: Typescript, React.js and Hooks.
