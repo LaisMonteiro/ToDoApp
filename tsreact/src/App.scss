@@ -12,12 +12,16 @@ body {
   justify-content: center;
   flex-direction: column;
   color: black;
-  form {
-    width: 20em;
-    height: 3em;
-  }
   button {
     background-color: black;
     color: white;
+    height: 2em;
+    margin-left: 1em;
+  }
+}
+.form-todo {
+  input {
+    width: 20em;
+    height: 2em;
   }
 }
