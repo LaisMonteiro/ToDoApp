@@ -12,6 +12,7 @@ export const TodoListItem: React.FC<TodoListItemProps> = ({ todo, toggleTodo }) 
   <li>
     <label className={todo.complete ? 'complete' : undefined}>
       <input type="checkbox" checked={todo.complete} onChange={() => toggleTodo(todo)} />
+      <span> </span>
       {todo.text}
     </label>
   </li>

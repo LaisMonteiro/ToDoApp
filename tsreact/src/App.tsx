@@ -10,7 +10,7 @@ import { TodoList } from './components/TodoList';
 import { AddTodoForm } from './components/AddTodoForm';
 import './App.scss';
 
-const initialTodos: Array<Todo> = [{ text: 'Write a to-do list', complete: false }];
+const initialTodos: Array<Todo> = [{ text: 'Write a to-do list', complete: true }];
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState(initialTodos);
@@ -35,9 +35,10 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <React.Fragment>
-        <h1>Write here:</h1>
+        <h1>To-do list for today</h1>
+        <h2>Write here:</h2>
         <AddTodoForm addTodo={addTodo} />
-        <h1>My list</h1>
+        <h2>My list</h2>
         <TodoList todos={todos} toggleTodo={toggleTodo} />
       </React.Fragment>
     </div>
